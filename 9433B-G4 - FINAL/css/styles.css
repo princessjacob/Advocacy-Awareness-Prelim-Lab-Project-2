@@ -1,0 +1,144 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  background: #77C9D4; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #77C9D4 , #57BC90); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #77C9D4 , #57BC90); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #77C9D4 , #57BC90); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #77C9D4 , #57BC90); /* Standard syntax */
+}
+
+nav {
+  background: #015249;
+  height: auto;
+  font-family: 'Pangolin', cursive;
+}
+
+nav ul {
+  width: auto;
+  margin: 0 auto;
+  padding: 1em;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 0 20px;
+  line-height: 40px;
+  text-decoration: none;
+  font-size: 200%;
+  color: white;
+}
+
+nav ul li a:hover {
+  background: #A5A5AF;
+  color: black;
+}
+
+nav.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header {
+  position: relative;
+}
+
+.banner {
+  height: 600px;
+  background: url(i/banner.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+
+.banner1 {
+  height: 400px;
+  background: url(i/banner.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background-repeat: no-repeat, repeat;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+.row {
+  margin-bottom: 5px;
+  display: flex;
+  padding: 2em;
+  background-color: #fff;
+  width: auto;
+}
+
+.col-12 {
+  width: 100%;
+  font-family: 'Bree Serif', serif;
+  font-size: 1.5em;
+  text-align: justify;
+}
+
+.col-12 h1{
+  width: auto;
+  font-family: 'Pangolin', cursive;
+  margin: 0 auto;
+  font-size: 1.5em;
+  background: #015249;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+.col-12 p {
+  margin-left: 10%;
+  margin-right: 10%;
+  display: block;
+}
+
+.img-shape {
+    border-radius: 50%;
+    padding-right: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 100%;
+}
+
+footer {
+    font-family: 'Pangolin', cursive;
+    font-size: 150%;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    margin-top: auto;
+    background-color: #015249;
+}
+
+.mem {
+  text-align: center;
+}
+
+#logo img {
+
+}
+
+
