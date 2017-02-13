@@ -140,6 +140,11 @@ footer {
   text-align: center;
 }
 
-
+.contact{
+   text-align: center;
+}
+.contact ul{
+     list-style: none;
+}
 
 
