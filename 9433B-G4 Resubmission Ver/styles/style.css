@@ -55,7 +55,7 @@ nav.fixed {
   width: 100%;
 }
 
-.header {
+header {
   position: relative;
 }
 
@@ -140,11 +140,12 @@ footer {
   text-align: center;
 }
 
-.contact{
-   text-align: center;
-}
-.contact ul{
-     list-style: none;
-}
+#contact{
+    text-align: center;
+ }
+
+ #contact ul{
+      list-style: none;
+ }
 
 
