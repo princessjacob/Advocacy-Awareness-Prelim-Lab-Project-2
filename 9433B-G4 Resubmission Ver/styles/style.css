@@ -121,6 +121,11 @@ header {
     display: block;
     max-width: 100%;
 }
+.img-shapes {
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
 
 footer {
     font-family: 'Pangolin', cursive;
@@ -146,5 +151,3 @@ footer {
  #contact ul{
       list-style: none;
  }
-
-
