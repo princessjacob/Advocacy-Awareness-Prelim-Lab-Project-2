@@ -55,19 +55,19 @@ nav.fixed {
   width: 100%;
 }
 
-.header {
+header {
   position: relative;
 }
 
 .banner {
   height: 600px;
-  background: url(../images/banner.jpg) no-repeat;
+  background: url(resources/banner.jpg) no-repeat;
   background-size: 100% 100%;
 }
 
 .banner1 {
   height: 400px;
-  background: url(../images/banner.jpg) no-repeat;
+  background: url(resources/banner.jpg) no-repeat;
   background-size: 100% 100%;
 }
 
@@ -112,13 +112,22 @@ nav.fixed {
 }
 
 .img-shape {
-    border-radius: 50%;
+    -webkit-border-radius: 70px;
+    -moz-border-radius: 70px;
+    border-radius: 70px;
     padding-right: 1em;
     margin-left: auto;
     margin-right: auto;
     display: block;
     max-width: 100%;
 }
+
+.img-inter {
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+
 
 footer {
     font-family: 'Pangolin', cursive;
@@ -137,15 +146,12 @@ footer {
   text-align: center;
 }
 
-#logo img {
-
-}
 #contact{
-    text-align: center;
- }
+  text-align: center;
+}
 
- #contact ul{
-      list-style: none;
- }
+#contact ul{
+  list-style: none;
+}
 
 

@@ -121,11 +121,13 @@ header {
     display: block;
     max-width: 100%;
 }
-.img-shapes {
+
+.img-inter {
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;
 }
+
 
 footer {
     font-family: 'Pangolin', cursive;
@@ -145,9 +147,11 @@ footer {
 }
 
 #contact{
-    text-align: center;
- }
+  text-align: center;
+}
 
- #contact ul{
-      list-style: none;
- }
+#contact ul{
+  list-style: none;
+}
+
+
