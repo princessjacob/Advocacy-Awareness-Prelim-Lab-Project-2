@@ -140,5 +140,12 @@ footer {
 #logo img {
 
 }
+#contact{
+    text-align: center;
+ }
+
+ #contact ul{
+      list-style: none;
+ }
 
 
