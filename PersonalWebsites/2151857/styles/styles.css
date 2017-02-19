@@ -1,0 +1,137 @@
+h2,h3{
+    font-family:cursive;
+    font-size: 180%;
+}
+body{
+  background-color: aliceblue;
+    
+}
+
+
+#wrapper{
+    margin: 15%;
+    margin-top: 10%;
+    margin-bottom:10%;
+    text-align:justify;
+}
+
+nav{
+	text-align: center;
+	line-height: 10%;
+    top:0;
+    left:0;
+	width:100%;
+	background-color: powderblue;
+    position:fixed;
+}
+
+
+nav li{
+	display: inline;
+	padding: 2%;
+	
+}
+
+nav a{
+	text-decoration: none;
+	font-variant-caps: normal;
+	
+}	
+nav a:hover{
+	color: #82CAFF;
+	
+}	
+
+#pic{
+    width: 100%;
+    height: 20%;
+    margin: 0;
+   
+}
+
+ul{
+    list-style-type: none;
+}
+
+footer {
+	text-align: center;
+	width: 100%;
+    height: 40%;   
+	background-color: powderblue;
+    bottom:0;
+    
+}
+.space1{
+    padding: 6%;
+}
+.space2{
+    padding: 2%;
+}
+.con{
+    height: 25%;
+    width: 25%;
+    margin-left:40%;
+}
+figure,figcaption{
+    padding:2%;
+    display:block;
+    font-variant: normal;
+
+
+}
+figcaption{
+    margin-left:40%;
+    line-height: 0;
+    font-size: 150%;
+}
+    	
+
+#fam{
+    height:30%; 
+    width:80%;
+}
+
+.hs{
+    height:50%; 
+    width:60%;
+    padding: 5%;
+}
+
+
+
+img{
+    margin-left: 10%;
+}
+#yolo{
+    margin-top: 7%
+}
+#email{
+    margin-left: 22%;
+}
+
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
