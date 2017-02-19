@@ -1,0 +1,371 @@
+/* General Styles */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+	height:100%;
+}
+body {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+.grid {
+    padding-top: 40px;
+    width: 70%;
+    margin: 0 auto;
+    flex: 1;
+    margin-bottom: 50px;
+}
+
+.row {
+  padding-top: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+  display: flex;
+  margin: 3px 0px;
+  text-align: justify;
+  font-size: 100%;
+}
+
+.grid2 {
+    padding-top: 40px;
+    width: 70%;
+    margin: 0 auto;
+    flex: 1;
+    margin-bottom: 50px;
+}
+
+.row2 {
+  background: white;
+  padding-top: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+  display: flex;
+  margin: 3px 0px;
+  text-align: justify;
+  font-size: 100%;
+}
+
+.col-12 {
+  font-family: 'Monda', cursive;
+  width: 100%;
+  height: auto;
+}
+
+.col-12 h1 {
+  font-family: 'Monda', cursive;
+  font-size: 3em;
+  text-align: center;
+  background: #fff;
+  color: #000;
+  border: 3px solid black;
+}
+
+.col-12 h2 {
+	font-family: 'Rock Salt', cursive;
+	font-size: 1.5em;
+    text-align: center;
+}
+
+.col-12 h3 {
+  font-family: 'Neucha', cursive;
+  font-size: 160%;
+  text-align: center;
+  background: #000000;
+  color:#ffffff;
+}
+
+.col-12 p {
+  text-align: justify;
+  font-size: 130%;
+  padding: 1em;
+}
+
+.col-12 a {
+  background: white;
+}
+.col-12 ul, li {
+  text-align: justify;
+  font-size: 110%;
+}
+
+body, div, ol {
+	margin: 0;
+	padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+
+ul, li {
+	font-family: 'Monda', sans-serif;
+	font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+}
+
+footer {
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Monda',   sans-serif;
+  position: fixed;
+  bottom: 0;
+  margin-top: auto;
+}
+
+span {
+  font-size: 2em;
+}
+
+span b {
+  font-size: 60%;
+}
+/* General Styles */
+
+/* Nav-Bar Styles */
+nav {
+  display: block;
+  position: relative;
+  background: white;
+  width: 100%;
+  height: auto;
+  padding: 0.25em;
+  border: 2px solid black;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+  padding-left: 50px;
+  text-align: center;
+  color: black;
+}
+
+nav li a:link, nav li a:visited{
+  display: block;
+  padding: 8px;
+  font-family: 'Monda', sans-serif;
+  font-size: 1.5em;
+  color: darkslategray;
+}
+
+nav li a:hover, nav li a:active {
+  background-color: black;
+  color: white;
+}
+
+.linkback {
+    background: white;
+    border: 2px solid black;
+    background-repeat: no-repeat repeat;
+    padding-left: 30%;
+    padding-right: 10%;
+    display: block;
+    font-family: 'Monda',   sans-serif;
+}
+
+#portnav {
+  display: block;
+  position: relative;
+  background: white;
+  width: 100%;
+  height: auto;
+}
+
+#portnav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#portnav li {
+  float: left;
+  padding-left: 50px;
+  text-align: center;
+  height: auto;
+  width: auto;
+  color: black;
+}
+
+#portnav li a:link, #portnav li a:visited{
+  display: block;
+  padding: 8px;
+  font-family: 'Monda', sans-serif;
+  font-size: 1.5em;
+  color: darkslategray;
+}
+
+#portnav li a:hover, #portnav li a:active {
+  background-color: black;
+  color: white;
+}
+/* Nav-Bar Styles */
+
+/* ID-based standalone styles */
+#home {
+  background: #fff;
+}
+
+#port {
+  background: #000;
+  color: #fff;
+}
+
+#relskills {
+  background: #fff;
+  color: #000;
+}
+
+#achievements {
+  background: #000;
+  color: #fff;
+}
+
+#about {
+  background: #fff;
+}
+
+.portimage {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 100%;
+}
+
+#profPic {
+    margin-left: 40%;
+    margin-right: 40%;
+    display: block;
+    max-width: 100%;
+}
+
+.gradient {
+    background-image:
+    linear-gradient(
+      to right, 
+      black, white
+    );
+}
+
+#poems p {
+   margin-left: 10%;
+   margin-right: auto;
+   display: block; 
+}
+/* ID-based standalone styles */
+
+/* Banners */
+.banner {
+    position: relative;
+    width: auto;
+}
+
+#artBanner {
+    background: url(bg/artport.png);
+    background-size: 100% 100%;
+    height: 500px;
+}
+
+#writeBanner {
+    background: url(bg/writeport.png);
+    background-size: 100% 100%;
+    height: 500px;
+}
+
+#gameBanner {
+    background: url(bg/gameport.png);
+    background-size: 100% 100%;
+    height: 500px;
+}
+
+#homeBanner {
+    background: url(bg/homebanner.png);
+    background-size: 100% 100%;
+    height: 800px;
+}
+
+/* Banners */
+
+/* Tiled Gallery */
+.wrap {
+  overflow: hidden;
+  margin: 10px;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.box {
+    float: left;
+    position: relative;
+    width: 20%;
+    padding-bottom: 20%;
+    border: 2px solid black;
+}
+
+.boxInner {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    overflow: hidden;
+}
+ .boxInner img { 
+     width: 100% 
+}
+
+
+@media only screen and (max-width:480px) { 
+    /* Smartphone view: 1 tile */
+    .box {
+        width: 100%;
+        padding-bottom: 100%;
+    }
+}
+@media only screen and (max-width:650px) and (min-width:481px) { 
+    /* Tablet view: 2 tiles */
+    .box {
+        width: 50%;
+        padding-bottom: 50%;
+    }
+}
+@media only screen and (max-width:1050px) and (min-width:651px) { 
+    /* Small desktop / ipad view: 3 tiles */
+    .box {
+        width: 33.3%;
+        padding-bottom: 33.3%;
+    }
+}
+@media only screen and (max-width:1290px) and (min-width:1051px) { 
+    /* Medium desktop: 4 tiles */
+    .box {
+        width: 25%;
+        padding-bottom: 25%;
+    }
+}
+
+
