@@ -1,6 +1,4 @@
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -11,14 +9,11 @@ body {
 
 body {
   background: #77C9D4; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left, #77C9D4 , #57BC90); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, #77C9D4 , #57BC90); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, #77C9D4 , #57BC90); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, #77C9D4 , #57BC90); /* Standard syntax */
+  background: linear-gradient(to left, #F78C40,#CC3020,#CC3020, #F45959); /* Standard syntax */
 }
 
 nav {
-  background: #015249;
+ background-color : floralwhite; 
   height: auto;
   font-family: 'Pangolin', cursive;
 }
@@ -28,6 +23,7 @@ nav ul {
   margin: 0 auto;
   padding: 1em;
   list-style: none;
+  text-align: center;
 }
 
 nav ul li {
@@ -40,12 +36,12 @@ nav ul li a {
   line-height: 40px;
   text-decoration: none;
   font-size: 200%;
-  color: white;
+  color: #CC3020;
 }
 
 nav ul li a:hover {
-  background: #A5A5AF;
-  color: black;
+  background: #F45959;
+  color: #000;
 }
 
 nav.fixed {
@@ -56,19 +52,19 @@ nav.fixed {
 }
 
 header {
-  position: relative;
+  position:relative;
 }
 
 .banner {
   height: 600px;
-  background: url(resources/banner.jpg) no-repeat;
-  background-size: 100% 100%;
+  background: linear-gradient(to left, #F78C40,#CC3020,#CC3020, #F45959);
+  background-size:100% 100%;
 }
 
 .banner1 {
-  height: 400px;
-  background: url(resources/banner.jpg) no-repeat;
-  background-size: 100% 100%;
+  height: 100px;
+  background: linear-gradient(to left, #F78C40,#CC3020,#CC3020, #F45959);
+  background-size:100% 100%;
 }
 
 .container {
@@ -83,7 +79,7 @@ header {
   margin-bottom: 5px;
   display: flex;
   padding: 2em;
-  background-color: #fff;
+  background-color: floralwhite;
   width: auto;
 }
 
@@ -99,10 +95,10 @@ header {
   font-family: 'Pangolin', cursive;
   margin: 0 auto;
   font-size: 1.5em;
-  background: #015249;
-  color: #fff;
-  padding: 1em;
-  text-align: center;
+  background: linear-gradient(to left, #F78C40, #CC3020, #F45959);
+  color: floralwhite;
+  padding: 0.5em;
+  text-align: left;
 }
 
 .col-12 p {
@@ -112,9 +108,7 @@ header {
 }
 
 .img-shape {
-    -webkit-border-radius: 70px;
-    -moz-border-radius: 70px;
-    border-radius: 70px;
+    border-radius: 80px;
     padding-right: 1em;
     margin-left: auto;
     margin-right: auto;
@@ -123,23 +117,26 @@ header {
 }
 
 .img-inter {
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
+     border-radius: 60px;
+     margin-right: 90px;
+     margin-left: 70px;
+    
 }
 
 
 footer {
     font-family: 'Pangolin', cursive;
     font-size: 150%;
-    color: white;
+    color: #CC3020;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 60px;
     margin-top: auto;
-    background-color: #015249;
+    background-color: floralwhite;
+    text-align: center;
+    padding-top: 15px;
 }
 
 .mem {
