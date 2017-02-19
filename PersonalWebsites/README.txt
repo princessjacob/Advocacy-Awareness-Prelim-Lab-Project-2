@@ -1,0 +1,1 @@
+Commit all personal websites for the Apache Configuration Activity 2.
