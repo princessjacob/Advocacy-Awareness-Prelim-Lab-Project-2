@@ -1,0 +1,349 @@
+body {
+	background-color:#404040;
+	color: black;
+	font-size: 100%;
+	font-family: 'Comic Sans MS';
+	line-height: 1.5;
+	text-align: center;
+}
+.mainheader {
+	margin-left:auto;
+    margin-right:auto;
+	text-align: relative;
+}
+a {
+	text-decoration: none;
+}
+a:link, a:visited {
+}
+a:hover, a:active {
+}
+.body {
+	margin: 0 auto;
+	width: 90%;
+	clear: both;
+	text-align: relative;
+}
+.homefooter {
+	margin-top: 15px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+.homefooter a{
+	background-color: #9e9e9e;
+    color: black;
+    padding: 14px 25px;
+    text-decoration: none;
+    display: inline-block;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	
+}
+#slider {
+   background: #000;
+   border: 5px solid #eaeaea;
+   box-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+   height: 500px;
+   width: 900px;
+   margin: 40px auto 0;
+   overflow: visible;
+   position: relative;
+   float: center;
+}
+#mask {
+   overflow: hidden;
+   height: 500px;
+   float: center;
+}
+#slider ul {
+   margin: auto;
+   padding: 0;
+   position: relative;
+   float: center;
+}
+
+#slider li {
+   width: 750px;  /* Width Image */
+   height: 300px; /* Height Image */
+   position: absolute;
+   top: -750px; /* Original Position - Outside of the Slider */
+   list-style: none;
+   float: center;
+}
+#slider li.firstanimation {
+   animation: cycle 25s linear infinite;
+}
+
+#slider li.secondanimation {
+   animation: cycletwo 25s linear infinite;
+}
+
+#slider li.thirdanimation {
+   animation: cyclethree 25s linear infinite;
+}
+
+#slider li.fourthanimation {
+   animation: cyclefour 25s linear infinite;
+}
+
+#slider li.fifthanimation {
+   animation: cyclefive 25s linear infinite;
+}
+@keyframes cycle {
+   0%  { top: 0px; } /* When you start the slide, the first image is already visible */
+   4%  { top: 0px; } /* Original Position */
+   16% { top: 0px; opacity:1; z-index:0; } /* From 4% to 16 % = for 3 seconds the image is visible */
+   20% { top: 325px; opacity: 0; z-index: 0; } /* From 16% to 20% = for 1 second exit image */
+   21% { top: -325px; opacity: 0; z-index: -1; } /* Return to Original Position */
+   92% { top: -325px; opacity: 0; z-index: 0; }
+   96% { top: -325px; opacity: 0; } /* From 96% to 100% = for 1 second enter image*/
+   100%{ top: 0px; opacity: 1; }
+}
+
+@keyframes cycletwo {
+   0%  { top: -325px; opacity: 0; } /* Original Position */
+   16% { top: -325px; opacity: 0; }/* Starts moving after 16% to this position */
+   20% { top: 0px; opacity: 1; }
+   24% { top: 0px; opacity: 1; }  /* From 20% to 24% = for 1 second enter image*/
+   36% { top: 0px; opacity: 1; z-index: 0; }   /* From 24% to 36 % = for 3 seconds the image is visible */
+   40% { top: 325px; opacity: 0; z-index: 0; } /* From 36% to 40% = for 1 second exit image */
+   41% { top: -325px; opacity: 0; z-index: -1; }   /* Return to Original Position */
+   100%{ top: -325px; opacity: 0; z-index: -1; }
+}
+
+@keyframes cyclethree {
+   0%  { top: -325px; opacity: 0; }
+   36% { top: -325px; opacity: 0; }
+   40% { top: 0px; opacity: 1; }
+   44% { top: 0px; opacity: 1; }
+   56% { top: 0px; opacity: 1; }
+   60% { top: 325px; opacity: 0; z-index: 0; }
+   61% { top: -325px; opacity: 0; z-index: -1; }
+   100%{ top: -325px; opacity: 0; z-index: -1; }
+}
+
+@keyframes cyclefour {
+   0%  { top: -325px; opacity: 0; }
+   56% { top: -325px; opacity: 0; }
+   60% { top: 0px; opacity: 1; }
+   64% { top: 0px; opacity: 1; }
+   76% { top: 0px; opacity: 1; z-index: 0; }
+   80% { top: 325px; opacity: 0; z-index: 0; }
+   81% { top: -325px; opacity: 0; z-index: -1; }
+   100%{ top: -325px; opacity: 0; z-index: -1; }
+}
+@keyframes cyclefive {
+   0%  { top: -325px; opacity: 0; }
+   76% { top: -325px; opacity: 0; }
+   80% { top: 0px; opacity: 1; }
+   84% { top: 0px; opacity: 1; }
+   96% { top: 0px; opacity: 1; z-index: 0; }
+   100%{ top: 325px; opacity: 0; z-index: 0; }
+}
+.progress-bar {
+   position: relative;
+   top: -5px;
+   width: 680px;
+   height: 5px;
+   background: #000;
+   animation: fullexpand 25s ease-out infinite;
+}
+@keyframes fullexpand {
+   /* In these keyframes, the progress-bar is stationary */
+   0%, 20%, 40%, 60%, 80%, 100% { width: 0%; opacity: 0; }
+
+   /* In these keyframes, the progress-bar starts to come alive */
+   4%, 24%, 44%, 64%, 84% { width: 0%; opacity: 0.3; }
+
+   /* In these keyframes, the progress-bar moves forward for 3 seconds */
+   16%, 36%, 56%, 76%, 96% { width: 100%; opacity: 0.7; }
+
+   /* In these keyframes, the progress-bar has finished his path */
+   17%, 37%, 57%, 77%, 97% { width: 100%; opacity: 0.3; }
+
+   /* In these keyframes, the progress-bar will disappear and then resume the cycle */
+   18%, 38%, 58%, 78%, 98% { width: 100%; opacity: 0; }
+}
+.mainHeader img {
+	text-align: center;
+	width: 60%;
+	height: auto;
+	float: center;
+}
+.mainHeader nav {
+	margin-top: 20px;
+	background-color: #707070;
+	height: 60px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	text-align: center;
+}
+.mainHeader nav ul {
+	list-style:none;
+	margin: 0 auto;
+	text-align: center;
+}
+.mainHeader nav ul li {
+	float: center;
+	display: inline;
+	text-align: center;
+}
+.mainHeader nav a:link, mainHeader nav a:visited {
+	color: black;
+	display: inline-block;
+	padding: 10px 25px;
+	height: 40px;
+	text-align: center;
+}
+.mainHeader nav a:hover, .mainHeader nav a:active, 
+.mainHeader nav .active a:link, .mainHeader nav .active a:visited {
+	background-color: #dadada;
+	color: black;
+	text-shadow: none;
+	text-align: center;
+}
+.mainHeader nav ul li a {
+	font-size: 30px;
+	color: black;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	text-align: center;
+}
+.mainContent {
+	line-height: 25px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	color: black;
+}
+
+.topcontent {
+	background-color: #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 2% 3%;
+	margin-top: 20px;
+}
+.perback p{
+	text-indent: 40px;
+}
+.skills p{
+	text-indent: 40px;
+}
+.accomp p{
+	text-indent: 40px;
+}
+.experience p{
+	text-indent: 40px;
+}
+.middlecontent {
+	background-color: #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 1% 2%;
+	margin-top: 20px;
+}
+.middlecontent header {
+	background-color: #9e9e9e;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 1px 10px;
+}
+.middlecontent header p{
+	font-size: 30px;
+	text-align: center;
+	
+}
+.bottomcontent {
+	background-color: #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 2% 3%;
+	margin-top: 20px;
+}
+.bottomcontent header {
+	background-color: #9e9e9e;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 1px 3px;
+}
+.bottom1content {
+	background-color: #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 2% 3%;
+	margin-top: 20px;
+}
+.bottomcontent header p{
+	font-size: 30px;
+	text-align: center;
+	
+}
+.bottomcontent header img{
+	text-align: center;
+}
+.bottom1content header {
+	background-color: #9e9e9e;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 1px 3px;
+}
+.bottom1content header p{
+	font-size: 30px;
+	text-align: center;
+	
+}
+.bottom1content header img{
+	text-align: center;
+}
+.image {
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding:3px;
+   border:1px solid #404040;
+   background-color: #404040;
+}
+.footer {
+	background-color: #707070;
+	height: 130px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.footer h3 {
+	float: center;
+	margin-bottom: 5px;
+}
+.fm {
+	border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	padding:1px;
+   border:2px solid #adadad;
+   background-color: #adadad;
+}
+.footer h2 {
+	color: black;
+}
+.footer a{
+	color: white;
+	margin-bottom: 1px;
+	   margin-bottom: 5px;
+}
+.footer p {
+	Margin-top: 3px;
+}
